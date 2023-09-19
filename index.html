@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Control Finance - Seu controle financeiro">
+    <link rel="stylesheet" href="./styles/globalStyles.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+<body>
+
+    <header>
+
+        <div>
+
+            <h1 class="logo"><span class="sub-logo">Control</span> Finance</h1>
+            <button data-registrar="registrar">Registrar novo valor</button>
+
+        </div>
+
+    </header>
+
+    <main id="app" class="container">
+
+        <nav>
+
+            <p>Resumo financeiro</p>
+
+            <div>
+
+                <button data-todos = 0 >Todos</button>
+                <button data-entradas = 1>Entradas</button>
+                <button data-saidas = 2>Saídas</button>
+
+            </div>
+
+        </nav>
+
+        <section>
+
+            <p>Saldo</p>
+
+            <p data-soma-total="total"></p>
+
+        </section>
+
+        <div class="default">
+            <p>Nenhum valor cadastrado</p>
+            <span>Registrar novo valor</span>
+        </div>
+
+        <ul id="ul">
+
+        </ul>
+
+    </main>
+
+    <script src="./scripts/modal.js"></script>
+    <script src="/pages/home/valuesData.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
